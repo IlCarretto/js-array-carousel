@@ -1,0 +1,60 @@
+img {
+    max-width: 100%;
+}
+
+.ms-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+}
+
+.ms-card {
+    height: 50vh;
+    display: none;
+}
+
+.ms-card img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.previous-arr,
+.next-arr {
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%;);
+    background-color: rgba(240, 240, 240, 0.5);
+    border-radius: 50%;
+    font-size: 1.4rem;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.previous-arr:hover,
+.next-arr:hover {
+    background-color: rgba(240, 240, 240, 1);
+}
+
+.previous-arr {
+    top: 10px;
+}
+
+.next-arr {
+    bottom: 10px;
+}
+
+.ms-card.active {
+    display: block;
+}
